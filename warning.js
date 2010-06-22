@@ -165,7 +165,6 @@ function ie6(str) {
     _dl.style.position = "absolute";
     _dl.style.top = "0px";
     _dl.style.left = "0px";
-	_dl.style.zIndex = "3000";
     _dl.style.filter = "alpha(opacity=50)";
     _dl.style.background = "#fff";
 
@@ -181,6 +180,7 @@ function ie6(str) {
     _dd.style.left = 00+"px";
     _dd.style.padding = "20px";
     _dd.style.background = "#fff";
+	_dd.style.zIndex = "3000";
     _dd.style.border = "1px solid #ccc";
     _dd.style.fontFamily = "'Lucida Grande','Lucida Sans Unicode',Arial,Verdana,sans-serif";
     _dd.style.listStyleType = "none";
