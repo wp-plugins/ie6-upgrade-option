@@ -12,29 +12,59 @@ INSERT THIS LINES BELOW INTO YOUR HTML FILE, RIGHT AFTER THE <BODY> TAG
 userLang = userLang.substring(0,2);
  switch (userLang)
 {
-case  (userLang = "hu") :
-var msg1 = "Tud róla, hogy az ön böngészője elavult? (Internet Explorer)",
- msg2 = "A lehető legjobb eredmény eléréséhez, javasoljuk a böngésző frissítését. Jelenlegi állapotában, gépe veszélynek van kitéve az esetleges kártevő támadásokkal szemben, a hiányzó javítások miatt. Az alábbi lista tartalmazza a legnépszerűbb ingyenesen elérhető programokat.",
- msg3 = "Az ikonokra kattintva juthat el a letöltő oldalukra",
- msg4 = "A figyelmeztetés bezárásával elfogadja, hogy a megjelenítés esetleges hibáit ",
- msg5 = "Figyelmeztetés bezárása";
-break
 
-case  (userLang = "de") :
-var msg1 = "Wissen Sie, dass Ihr Internet Explorer nicht mehr aktuell ist?",
- msg2 = "Um unsere Webseite bestmöglich zu nutzen, empfehlen wir Ihnen Ihren Browser auf eine aktuellere Version zu aktualisieren oder einen anderen Webbrowser zu nutzen. Eine Liste der populärsten Browser finden Sie weiter unten.",
- msg3 = "Klicken Sie auf eines der Symbole um auf die Download-Seite zu gelangen",
- msg4 = "By closing this window you acknowledge that your experience on this website will be degraded",
- msg5 = "Schliessen";
-break
-
+// English
 default:
-var msg1 = "Did you know this version of Internet Explorer is out of date?",
- msg2 = "This web site does not support Internet Explorer 6. Things are bound to be broken and perhaps unusable. We recommend an upgrade to a newer version of Internet Explorer or another web browser. A list of the most popular web browsers can be found below",
- msg3 = "Just click on the icons to get to the download page",
- msg4 = "By closing this window you acknowledge that your experience on this website will be degraded",
- msg5 = "CLOSE";
+var 
+  msg1 = "Did you know this version of Internet Explorer is out of date?",
+  msg2 = "Doc4 does not support Internet Explorer 6. Things are bound to be broken and perhaps unusable. We recommend an upgrade to a newer version of Internet Explorer or another web browser. A list of the most popular web browsers can be found below",
+  msg3 = "Just click on the icons to get to the download page",
+  msg4 = "By closing this window you acknowledge that your experience on this website will be degraded",
+  msg5 = "CLOSE";
 break
+
+// Replace the default English with your language translation above
+// Hungarian
+case  (userLang = "hu") :
+var 
+  msg1 = "Tud róla, hogy az ön böngészője elavult? (Internet Explorer)",
+  msg2 = "A lehető legjobb eredmény eléréséhez, javasoljuk a böngésző frissítését. Jelenlegi állapotában, gépe veszélynek van kitéve az esetleges kártevő támadásokkal szemben, a hiányzó javítások miatt. Az alábbi lista tartalmazza a legnépszerűbb ingyenesen elérhető programokat.",
+  msg3 = "Az ikonokra kattintva juthat el a letöltő oldalukra",
+  msg4 = "A figyelmeztetés bezárásával elfogadja, hogy a megjelenítés esetleges hibáit ",
+  msg5 = "Figyelmeztetés bezárása";
+break
+
+// Swedish courtesy of Jimmy ( http://www.angrycreative.se/ ) nice site!
+case  (userLang = "sv") :
+var 
+  msg1 = "Visste du att denna versionen av Internet Explorer är utdaterad?",
+  msg2 = "Denna webbplats stödjer inte Internet Explorer 6. Sidan kommer sannolikt vara trasig eller till och med oandvändbar. Vi rekommenderar att du uppgraderar till en nyare version av Internet Explorer eller en annan webbläsare. En lista på de mest populära webbläsarna kan ses nedanför",
+  msg3 = "Klicka bara på ikonen för att komma till nedladdningssidan",
+  msg4 = "Genom att stänga detta fönster bekräftar du att du förstår att din upplevelse av denna webbplats inte är optimal.",
+  msg5 = "STÄNG";
+break
+
+// Spanish courtesy of: Melvis Leon 
+case  (userLang = "es") :
+var 
+  msg1 = "¿Sabías que esta versión del Internet Explorer esta desactualizada?",
+  msg2 = "Este sitio web no es compatible con Internet Explorer 6. Algunas cosas podrían ver se mal y tal vez no funcionar. Se recomienda la actualización a una versión más reciente del Internet Explorer u otro navegador web. Debajo se encuentra una lista de los navegadores web más populares.",
+  msg3 = "Solo tienes que hacer clic sobre el icono para ir a la página de descarga",
+  msg4 = "Al cerrar esta ventana usted reconoce que su experiencia en este website será degradada",
+  msg5 = "CERRAR";
+break
+
+
+// German
+case  (userLang = "de") :
+var 
+  msg1 = "Wissen Sie, dass Ihr Internet Explorer nicht mehr aktuell ist?",
+  msg2 = "Um unsere Webseite bestmöglich zu nutzen, empfehlen wir Ihnen Ihren Browser auf eine aktuellere Version zu aktualisieren oder einen anderen Webbrowser zu nutzen. Eine Liste der populärsten Browser finden Sie weiter unten.",
+  msg3 = "Klicken Sie auf eines der Symbole um auf die Download-Seite zu gelangen",
+  msg4 = "By closing this window you acknowledge that your experience on this website will be degraded",
+  msg5 = "Schliessen";
+break
+
 } 
  
 var br1 = "Internet Explorer 8+",
@@ -135,6 +165,7 @@ function ie6(str) {
     _dl.style.position = "absolute";
     _dl.style.top = "0px";
     _dl.style.left = "0px";
+	_dl.style.zIndex = "3000";
     _dl.style.filter = "alpha(opacity=50)";
     _dl.style.background = "#fff";
 
