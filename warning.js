@@ -36,7 +36,8 @@ break
 
 // Swedish courtesy of Jimmy ( http://www.angrycreative.se/ ) nice site!
 case  (userLang = "sv") :
-var 
+var
+  //msg1 = "Visste du att denna versionen av Internet Explorer är föråldrad?", change to this new message
   msg1 = "Visste du att denna versionen av Internet Explorer är utdaterad?",
   msg2 = "Denna webbplats stödjer inte Internet Explorer 6. Sidan kommer sannolikt vara trasig eller till och med oandvändbar. Vi rekommenderar att du uppgraderar till en nyare version av Internet Explorer eller en annan webbläsare. En lista på de mest populära webbläsarna kan ses nedanför",
   msg3 = "Klicka bara på ikonen för att komma till nedladdningssidan",
