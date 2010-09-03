@@ -3,8 +3,8 @@ Contributors: Doc4, mihai.ile
 Donate link: http://www.doc4design.com/donate
 Tags: ie6, internet explorer, internet explorer 6, ie6 warning, ie6 message, no ie6, no more ie6, ie6 upgrade, explorer upgrade, internet explorer upgrade, internet explorer message, ie6 close button, explorer destroyer
 Requires at least: 2.8
-Tested up to: 3.0
-Stable tag: 1.6
+Tested up to: 3.1
+Stable tag: 1.7
 
 
 == Description ==
@@ -20,13 +20,11 @@ To change the copy to reflect a language of your choice simply open the warning.
 
 
 == Screenshots ==
-
 View Screenshots:
 http://www.doc4design.com/plugins/ie6-upgrade
  
 
 == Installation ==
-
 To install the plugin just follow these simple steps:
 
 1. Download the plugin and expand it.
@@ -36,9 +34,19 @@ To install the plugin just follow these simple steps:
 5. The message can be modified by opening the warning.js file and altering   
    Lines: 16-20 (Hungarian) Lines: 24-28 (German) or Lines: 32-36 (English)
 
+
 == Changelog ==
+=1.7=
+* Added Spanish Translations
+* Added Swedish Translations
 
 = 1.1 =
 * Includes z-index value of 3000 to keep the lightbox on top of objects
 * Includes Spanish translation courtesy of: Melvis Leon
-¥ Includes Swedish translation courtesy of: Jimmy (http://www.angrycreative.se/)
+* Includes Swedish translation courtesy of: Jimmy (http://www.angrycreative.se/)
+
+
+== Credits & Thanks ==
+* Recent Donations: Bill Hollings
+* Spanish Translation: Melvis Leon
+* Swedish Translation: Jimmy [http://www.angrycreative.se/]
