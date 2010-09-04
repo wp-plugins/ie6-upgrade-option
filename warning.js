@@ -17,7 +17,7 @@ userLang = userLang.substring(0,2);
 default:
 var 
   msg1 = "Did you know this version of Internet Explorer is out of date?",
-  msg2 = "Doc4 does not support Internet Explorer 6. Things are bound to be broken and perhaps unusable. We recommend an upgrade to a newer version of Internet Explorer or another web browser. A list of the most popular web browsers can be found below",
+  msg2 = "We no longer support Internet Explorer 6. Things are bound to be broken and perhaps unusable. We recommend an upgrade to a newer version of Internet Explorer or another web browser. A list of the most popular web browsers can be found below",
   msg3 = "Just click on the icons to get to the download page",
   msg4 = "By closing this window you acknowledge that your experience on this website will be degraded",
   msg5 = "CLOSE";
