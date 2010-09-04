@@ -4,7 +4,7 @@ Donate link: http://www.doc4design.com/donate
 Tags: ie6, internet explorer, internet explorer 6, ie6 warning, ie6 message, no ie6, no more ie6, ie6 upgrade, explorer upgrade, internet explorer upgrade, internet explorer message, ie6 close button, explorer destroyer
 Requires at least: 2.8
 Tested up to: 3.1
-Stable tag: 1.7
+Stable tag: 1.8
 
 
 == Description ==
