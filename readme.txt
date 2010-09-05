@@ -36,7 +36,7 @@ To install the plugin just follow these simple steps:
 
 
 == Changelog ==
-=1.7=
+= 1.7 =
 * Added Spanish Translations
 * Added Swedish Translations
 
@@ -46,7 +46,8 @@ To install the plugin just follow these simple steps:
 * Includes Swedish translation courtesy of: Jimmy (http://www.angrycreative.se/)
 
 
-== Credits & Thanks ==
+== Other Notes ==
+= Credits & Thanks =
 * Recent Donations: Bill Hollings
 * Spanish Translation: Melvis Leon
 * Swedish Translation: Jimmy [http://www.angrycreative.se/]
