@@ -1,10 +1,10 @@
 === IE6 Upgrade Option ===
-Contributors: Doc4, mihai.ile
+Contributors: Doc4, Free the Foxes
 Donate link: http://www.doc4design.com/donate
-Tags: ie6, internet explorer, internet explorer 6, ie6 warning, ie6 message, no ie6, no more ie6, ie6 upgrade, explorer upgrade, internet explorer upgrade, internet explorer message, ie6 close button, explorer destroyer
+Tags: ie6, internet explorer, internet explorer 6, ie6 warning, ie6 message, no ie6, no more ie6, ie6 upgrade, explorer upgrade, internet explorer upgrade, internet explorer message, ie6 close button, explorer destroyer, browser warning message, browser warning, ie7, ie8, opera, firefox, safari, chrome, google chrome
 Requires at least: 2.8
 Tested up to: 3.1
-Stable tag: 1.8
+Stable tag: 2.0
 
 
 == Description ==
@@ -12,11 +12,13 @@ Stable tag: 1.8
 = Plugin URL =
 http://www.doc4design.com/plugins/ie6-upgrade/
 
-IE6 Upgrade Option utilizes the 7.9kb script created by mihai.ile: http://code.google.com/p/ie6-upgrade-warning/ as a WordPress plugin. I preferred this script over the many alternatives due to the fact that the message is displayed with a Lightbox effect and not placed at the top of the code forcing content down and drastically altering the page appearance. This plugin displays a warning message, simply and politely informing the user that their browser is out of date and providing links to download newer browsers. Links included are: IE8, Firefox, Opera, Safari, and Chrome. 
+IE6 Upgrade Option utilizes the 25K script created by Free the Foxes: http://www.freethefoxes.com/ as a WordPress plugin. I originally preferred another, smaller 7K script but it's limits had clearly been met in terms of language support ease-of-use and options for warning messages on browsers other than IE6. We have kept the original, large warning message design with a newer script in the backend. 
 
-The web page remains visible through a transparent, Lightbox effect in the background and the user has the option of closing the window agreeing that their experience may be severely degraded. The javascript then installs a cookie preventing the window from appearing again, unless the cookies are cleared. The script is added to the footer of the HTML only if the browser is detected as being an MSIE browser, notably Internet Explorer 6.
+The warning message is displayed using a Lightbox effect hovering over the page content. The idea is to display a warning message, simply and politely informing the user that their browser is out of date while providing links to download newer, more optimal browser choices. Optional browser links included are: IE8, Firefox, Opera, Safari, and Chrome. While this plugin was originally intended for use with IE6 it has now been expanded, due to popular demand, to include a warning message capable of being displayed in any browser. Don't like Firefox? Simply adjust the FTF rating and ask your users to use IE8. This is not limited to a a single browser either, feel free to turn on the warning for IE6, IE7 and Chrome simultaneously.
 
-To change the copy to reflect a language of your choice simply open the warning.js file and replace the default message text. Current quick translations include: English, German, Hungarian, Spanish and Swedish.
+The web page will remain visible through the transparent Lightbox effect and the user is faced with the option of closing the window agreeing that their experience may be severely degraded. The javascript then installs a cookie preventing the window from appearing again. The script is loaded in the site footer in two ways: selectively (as in the case of the basic setup) or permanent (if using multiple browsers or browsers other than IE6).
+
+To change the text to reflect the language of your choice simply open the "lang" folder and create your own .json file to replace the default message, then be sure to add your new language code to the ie6-upgrade-option.php file. Current quick translations include: English, German, Spanish, Hungarian, Swedish, Brazilian Portuguese, Dutch and Norwegian Bokmål.
 
 
 == Screenshots ==
@@ -28,26 +30,47 @@ http://www.doc4design.com/plugins/ie6-upgrade
 To install the plugin just follow these simple steps:
 
 1. Download the plugin and expand it.
-2. Copy the IE6-Upgrade-Option folder into your plugins folder ( wp-content/plugins ).
+2. Copy the ie6-ppgrade-option folder into your plugins folder ( wp-content/plugins ).
 3. Log-in to the WordPress administration panel and visit the Plugins page.
-4. Locate the IE6-Upgrade-Option plugin and click on the activate link.
-5. The message can be modified by opening the warning.js file and altering   
-   Lines: 16-20 (Hungarian) Lines: 24-28 (German) or Lines: 32-36 (English)
+4. Locate the ie6-upgrade-option plugin and click on the activate link.
+
+= Translations =
+1. Open the "lang" folder and duplicate one of the language files.
+2. Alter the warning message to the language of your choice.
+3. Change the file name to your language code: "en.json" for English.
+4. Upload the file into the "lang" folder.
+5. Open the "ie6-upgrade-option.php" file.
+6. Change line 60 by replacing the "en.json" url with your new language file name.
+
+= Additional Browser Warnings =
+Browser warnings can be applied to browsers other than IE6 by following a few simple instructions in the "ie6-upgrade-option.php" file.
 
 
 == Changelog ==
+
+= 1.9 =
+* Added Dutch Translation courtesy of: Marc Verbeeck
+* Added Norwegian - Bokmål Translation courtesy of: Kjetil Flekkøy
+* Added Brazilian Portuguese Translation courtesy of: Raoni
+
+
 = 1.7 =
-* Added Spanish Translations
-* Added Swedish Translations
+* Added Spanish Translations courtesy of: Melvis Leon
+* Added Swedish Translations courtesy of: Jimmy
 
 = 1.1 =
 * Includes z-index value of 3000 to keep the lightbox on top of objects
-* Includes Spanish translation courtesy of: Melvis Leon
-* Includes Swedish translation courtesy of: Jimmy (http://www.angrycreative.se/)
 
 
-== Other Notes ==
-= Credits & Thanks =
-* Recent Donations: Bill Hollings
-* Spanish Translation: Melvis Leon
-* Swedish Translation: Jimmy [http://www.angrycreative.se/]
+== Credits & Thanks ==
+
+= Recent Donations = 
+* Bill Hollings
+
+
+= Translations =
+* Dutch: Marc Verbeeck - http://www.rodenbachschool.be/
+* Norwegian Bokmål: Kjetil Flekkøy - http://www.kjetil@dolcevita.no
+* Brazilian Portuguese: Raoni - http://www.agenciaad.com.br
+* Spanish: Melvis Leon
+* Swedish: Jimmy - http://www.angrycreative.se/
