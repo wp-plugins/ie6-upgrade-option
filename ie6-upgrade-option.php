@@ -3,7 +3,7 @@
 Plugin Name: IE6 Upgrade Option
 Plugin URI: http://www.doc4design.com/plugins/ie6-upgrade
 Description: Generates an optional IE6 upgrade message as a plugin with output only for MSIE browsers
-Version: 1.8
+Version: 2.0
 Author: Doc4
 Author URI: http://www.doc4design.com
 */
@@ -29,19 +29,74 @@ The license is also available at http://www.gnu.org/copyleft/gpl.html
 
 *********************************************************************************/
 
+// More than IE6? Comment out the line below
 class ie6option {
-	
+
+// More than IE6? Uncomment the line below
+//add_action('wp_footer','add_footer');
+
 	function add_footer() {
 		ob_start();
-		echo "<!--[if lte IE 6]>";
+		// More than IE6? Comment out the line below
+		echo '<!--[if IE 6]>';
+		echo '<div id="ftf_link"></div>';
 		echo '<script src="' . plugins_url("ie6-upgrade-option/warning.js") . '"></script>';
-		echo '<script>window.onload=function(){ie6("' . plugins_url("ie6-upgrade-option/images/") . '")}</script>';
-		echo "<![endif]-->";
+		echo '<script type="text/javascript" charset="ISO-8859-1"> 
+				var ftf = new ftf();
+ 
+ 				ftf.instance_name 	= "ftf"; 
+ 
+				// This is the url for the images
+				ftf.base_url	= "' . plugins_url("ie6-upgrade-option/images/") . '";
+ 
+				ftf.output_to 	 	= "ftf_link"; 
+  
+				// Replace the English translation with your .json file
+				ftf.lang_external	 	 = "' . plugins_url("ie6-upgrade-option/lang/en.json") . '";
+ 
+				// Would you like the script to automatically popup onload?
+				ftf.onload 			= true;
+ 		
+				// Not used with this plugin please leave as false
+				ftf.analytics 		= false;
+ 
+				// This will only display the popup onload once and is not persistent throughout the site.
+				// Requires onload to be set to true as well.
+				ftf.onlyonce 		= true;
+ 
+				// The url for the css styles
+				ftf.css_external 		= "' . plugins_url("ie6-upgrade-option/style.css") . '";
+ 
+				/*
+				The following are the three different approval levels you may set to specific browsers:
+					1 = Pass/Recommended
+					2 = Pass/Acceptable
+					3 = Fail - Displays Warning Message
+ 
+				The following are the default values for each browser but can be easily changed by 
+				resetting the values using the following method.
+				*/
+				ftf.rate_firefox 	= 1; // Firefox
+				ftf.rate_chrome 	= 1; // Google Chrome
+				ftf.rate_safari		= 1; // Safari
+				ftf.rate_opera 		= 2; // Opera
+				ftf.rate_ie6 		= 3; // Internet Explorer 6.0
+				ftf.rate_ie7 		= 3; // Internet Explorer 7.0
+				ftf.rate_ie8 		= 2; // Internet Explorer 8.0
+ 
+				// Execute
+				ftf.init();
+				</script>';
+		// More than IE6? Comment out the line below
+		echo '<![endif]-->';
+
 		ob_get_contents();
 	}	
-}
 
-// Only display the code if MSIE Browser
+
+// Only display the code within Internet Explorer Browser
+// More than IE6? Comment out the function below
+}
 $browser = strtolower($_SERVER['HTTP_USER_AGENT']);  
 if(ereg("msie", $browser)){
 	$plugin_dir = basename(dirname(__FILE__));
@@ -50,4 +105,6 @@ if(ereg("msie", $browser)){
 	$obj_ie6option = new ie6option();
 	add_action('wp_footer', array($obj_ie6option, 'add_footer'));	
 }
+
+// Never comment out the php ending tag below or the sky will fall on your head
 ?>
