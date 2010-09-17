@@ -27,7 +27,7 @@ http://www.doc4design.com/plugins/ie6-upgrade
  
 
 == Installation ==
-=Install=
+= Install =
 1. Download the plugin and expand it.
 2. Copy the ie6-ppgrade-option folder into your plugins folder ( wp-content/plugins ).
 3. Log-in to the WordPress administration panel and visit the Plugins page.
@@ -47,7 +47,7 @@ Browser warnings can be applied to browsers other than IE6 by following a few si
 
 == Changelog ==
 
-=2.0=
+= 2.0 =
 * Instituted a newer script via Free The Foxes
 * Better, easier language support
 * Warning messages for singular or multiple browsers
@@ -65,13 +65,11 @@ Browser warnings can be applied to browsers other than IE6 by following a few si
 * Includes z-index value of 3000 to keep the lightbox on top of objects
 
 
-== Other Notes ==
-
-= Recent Donations = 
+== Recent Donations == 
 * Bill Hollings
 
 
-= Translations =
+== Translations ==
 * Dutch: Marc Verbeeck - http://www.rodenbachschool.be/
 * Norwegian Bokm&aring;l: Kjetil Flekk&oslash;y - http://www.kjetil@dolcevita.no
 * Brazilian Portuguese: Raoni - http://www.agenciaad.com.br
