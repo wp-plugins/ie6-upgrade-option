@@ -50,7 +50,7 @@ Browser warnings can be applied to browsers other than IE6 by following a few si
 = 2.0 =
 * Instituted a newer script via Free The Foxes
 * Better, easier language support
-* Warning messages for singular or multiple browsers
+* Warning messages for singule or multiple browsers
 
 = 1.9 =
 * Added Dutch Translation courtesy of: Marc Verbeeck&oslash;y
