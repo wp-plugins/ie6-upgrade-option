@@ -73,5 +73,5 @@ Browser warnings can be applied to browsers other than IE6 by following a few si
 * Dutch: Marc Verbeeck - http://www.rodenbachschool.be/
 * Norwegian Bokm&aring;l: Kjetil Flekk&oslash;y - http://www.dolcevita.no/
 * Brazilian Portuguese: Raoni - http://www.agenciaad.com.br
-* Spanish: Melvis Leon
+* Spanish: Melvis Leon - http://www.soludata.net/site
 * Swedish: Jimmy - http://www.angrycreative.se/
