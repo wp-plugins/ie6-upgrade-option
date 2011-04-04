@@ -3,7 +3,7 @@
 Plugin Name: IE6 Upgrade Option
 Plugin URI: http://www.doc4design.com/plugins/ie6-upgrade
 Description: Generates an optional IE6 upgrade message as a plugin with output only for MSIE browsers
-Version: 2.0
+Version: 2.5
 Author: Doc4
 Author URI: http://www.doc4design.com
 */
@@ -29,73 +29,99 @@ The license is also available at http://www.gnu.org/copyleft/gpl.html
 
 *********************************************************************************/
 
-// More than IE6? Comment out the line below
+// Would you like to use the pop up warning for browsers other than IE6?
+// If yes, then comment out the line below
 class ie6option {
 
-// More than IE6? Uncomment the line below
+// Would you like to use the pop up warning for browsers other than IE6?
+// If yes, then uncomment the line below
 //add_action('wp_footer','add_footer');
 
 	function add_footer() {
 		ob_start();
-		// More than IE6? Comment out the line below
+		// Would you like to use the pop up warning for browsers other than IE6?
+		// If yes, then comment out the line below
 		echo '<!--[if IE 6]>';
-		echo '<div id="ftf_link"></div>';
-		echo '<script src="' . plugins_url("ie6-upgrade-option/warning.js") . '"></script>';
+		
+		echo '<span id="ftf_link"></span>';
+		echo '<script src="' . plugins_url("ie6-upgrade-option/warning.js") . '" type="text/javascript" charset="ISO-8859-1"></script>';
 		echo '<script type="text/javascript" charset="ISO-8859-1"> 
-				var ftf = new ftf();
- 
- 				ftf.instance_name 	= "ftf"; 
- 
-				// This is the url for the images
-				ftf.base_url	= "' . plugins_url("ie6-upgrade-option/images/") . '";
- 
-				ftf.output_to 	 	= "ftf_link"; 
-  
-				// Replace the English translation with your .json file
-				ftf.lang_external	 	 = "' . plugins_url("ie6-upgrade-option/lang/en.json") . '";
- 
-				// Would you like the script to automatically popup onload?
-				ftf.onload 			= true;
- 		
-				// Not used with this plugin please leave as false
-				ftf.analytics 		= false;
- 
-				// This will only display the popup onload once and is not persistent throughout the site.
-				// Requires onload to be set to true as well.
-				ftf.onlyonce 		= true;
- 
-				// The url for the css styles
-				ftf.css_external 		= "' . plugins_url("ie6-upgrade-option/style.css") . '";
- 
-				/*
-				The following are the three different approval levels you may set to specific browsers:
-					1 = Pass/Recommended
-					2 = Pass/Acceptable
-					3 = Fail - Displays Warning Message
- 
-				The following are the default values for each browser but can be easily changed by 
-				resetting the values using the following method.
-				*/
-				ftf.rate_firefox 	= 1; // Firefox
-				ftf.rate_chrome 	= 1; // Google Chrome
-				ftf.rate_safari		= 1; // Safari
-				ftf.rate_opera 		= 2; // Opera
-				ftf.rate_ie6 		= 3; // Internet Explorer 6.0
-				ftf.rate_ie7 		= 3; // Internet Explorer 7.0
-				ftf.rate_ie8 		= 2; // Internet Explorer 8.0
- 
-				// Execute
-				ftf.init();
-				</script>';
-		// More than IE6? Comment out the line below
+				
+			var ftf = new ftf();
+			ftf.instance_name 	= "ftf"; 
+			ftf.icon_size 	 	= "regular";
+			ftf.output_to 	 	= "ftf_link"; 
+                     
+			/*
+			This feature is a Version 2.0 feature. It is the upgrade of the previous localization option. 
+			This must be a valid JSON file with the appropriate language translations.
+			You must upload the language JSON file to your website for use. (ie. ftf.lang_external = "includes/cs.json";)
+			*/
+			ftf.lang_external	 	 = "' . plugins_url("ie6-upgrade-option/lang/en.json") . '";
+
+			/*
+			If users browser has a 3(failed) rating.
+			Would you like the script to automatically popup onload?
+			The default value is true.
+			*/	
+			ftf.onload 		= true;
+
+			ftf.css_external 		= "' . plugins_url("ie6-upgrade-option/style.css") . '";
+
+			/*
+			The following are the three different approval levels you may set to specific browsers:
+			1 = Pass/Recommended
+			2 = Pass/Acceptable
+			3 = Fail
+
+			Any other number will return an error. 
+
+			The following are the default values for each browser but can be easily changed by 
+			resetting the values using the following method.
+			*/
+			ftf.rate = {
+			"firefox" : 1,
+			"chrome" : 1,
+			"opera" : 1,
+			"safari" : 1,
+			"ie6" : 3,		
+			"ie7" : 2,		
+			"ie8" : 1,
+			"ie9" : 1
+			};
+			
+			/*
+			The following are the default values for each browser icon. Version 3.0 requires you to host your own icons.
+			You can download a zip of all the icons above. 
+			*/
+			ftf.icons = {
+
+			"firefox" : "' . plugins_url("ie6-upgrade-option/icons/32/firefox.gif") . '",
+			"chrome" : 	"' . plugins_url("ie6-upgrade-option/icons/32/chrome.gif") . '",
+			"opera" : 	"' . plugins_url("ie6-upgrade-option/icons/32/opera.gif") . '",
+			"safari" : 	"' . plugins_url("ie6-upgrade-option/icons/32/safari.gif") . '",
+			"ie6" : 	"' . plugins_url("ie6-upgrade-option/icons/32/ie9.gif") . '",		
+			"ie7" : 	"' . plugins_url("ie6-upgrade-option/icons/32/ie9.gif") . '",		
+			"ie8" : 	"' . plugins_url("ie6-upgrade-option/icons/32/ie9.gif") . '",
+			"ie9" : 	"' . plugins_url("ie6-upgrade-option/icons/32/ie9.gif") . '"
+
+			};		
+
+			ftf.init(
+			);
+
+			</script>';
+		// Would you like to use the pop up warning for browsers other than IE6?
+		// If yes, then comment out the line below
 		echo '<![endif]-->';
 
 		ob_get_contents();
 	}	
 
 
+// Would you like to use the pop up warning for browsers other than IE6?
+// If yes, then comment out the function below
 // Only display the code within Internet Explorer Browser
-// More than IE6? Comment out the function below
 }
 $browser = strtolower($_SERVER['HTTP_USER_AGENT']);  
 if(ereg("msie", $browser)){
