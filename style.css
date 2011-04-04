@@ -1,4 +1,4 @@
-HTML,BODY,FORM,CENTER {
+html,body,form,center {
    width: 100%;
    height: 100%;
    padding: 0px;
@@ -17,9 +17,10 @@ HTML,BODY,FORM,CENTER {
    }
    
 #ftf_background	{
-   filter: Alpha(Opacity=80);
    -moz-opacity: 0.8;
-   opacity: 0.8;
+   -khtml-opacity: 0.8;
+   opacity: 0.8;*
+   filter: alpha(opacity=80);
    width: 100%;
    height: 100%;
    background-color: #666;
@@ -82,7 +83,7 @@ HTML,BODY,FORM,CENTER {
    text-transform: uppercase;
    }
    
-#ftf_inner .ftf_description {
+.ftf_description {
    padding: 0 10px 10px;
    color: #999;
    font-size: 12px;
@@ -90,28 +91,18 @@ HTML,BODY,FORM,CENTER {
    text-transform: none;
    }
    
-#ftf_inner .ftf_failed {
-   }
-   
-#ftf_inner .ftf_failed .ftf_browser_name {
+a .ftf_browser_name {
    font-weight: bold;
+   text-transform: uppercase;
    }
 
 /*#ftf_inner .ftf_acceptable {
    color: #998b45;
    }*/
-   
-#ftf_inner .ftf_acceptable .ftf_browser_name {
-   font-weight: bold;
-   }
 
 /*#ftf_inner .ftf_recommended	{
    color: #666;
    }*/
-   
-#ftf_inner .ftf_recommended .ftf_browser_name {
-   font-weight: bold;
-   }
    
 #ftf_inner BR {
    clear: both;
@@ -160,22 +151,22 @@ HTML,BODY,FORM,CENTER {
    background: #fff url(http: //code.freethefoxes.com/images/back_green.gif) no-repeat top right;
    }*/
 
-#ftf_body_inner .ftf_browser_link.failed .ftf_browser_download {
+#ftf_body_inner .ftf_browser_link.failed .ftf_browser_download,
+#ftf_body_inner .ftf_browser_link.recommended .ftf_browser_download {
    color: #629845;
+   text-transform: uppercase;
    }
    
 #ftf_body_inner .ftf_browser_link.appectable .ftf_browser_download {
    color: #997d45;
-   }
-   
-#ftf_body_inner .ftf_browser_link.recommended .ftf_browser_download	{
-   color: #629845;
+   text-transform: uppercase;
    }
    
 #ftf_body_inner .ftf_browser_link.you .ftf_browser_download	{
-   color: #cca329; !important
+   color: #CCA329; !important
+   text-transform: uppercase;
    }
-
+   
 #ftf_body_inner .ftf_browser_link {
    width: 117px;
    margin: 0 5px 10px;
@@ -192,15 +183,15 @@ HTML,BODY,FORM,CENTER {
 #ftf_body_inner .ftf_browser_link: link, 
 #ftf_body_inner .ftf_browser_link: visited {
    text-decoration: none;
-   border: solid 1px #dadada;
-   border-bottom: solid 3px #dadada;
+   border: solid 1px #DADADA;
+   border-bottom: solid 3px #DADADA;
    }
    
 #ftf_body_inner .ftf_browser_link: active, 
 #ftf_body_inner .ftf_browser_link: hover {
    text-decoration: none;
-   border: solid 1px #b9b9b9;
-   border-bottom: solid 3px #b9b9b9;
+   border: solid 1px #B9B9B9;
+   border-bottom: solid 3px #B9B9B9;
    }
 
 #ftf_body_inner .ftf_browser_icon {
@@ -239,9 +230,6 @@ HTML,BODY,FORM,CENTER {
    clear: both;
    }
    
-#ftf_footer	.ftf_left {
-   }
-   
 #ftf_footer	.ftf_left a: hover {
    text-decoration: underline;
    }
@@ -274,9 +262,6 @@ HTML,BODY,FORM,CENTER {
    border-bottom: solid 3px #b9b9b9;
    background-color: #f7f7f7;
    }
-   
-   
-/*FOOTER******************************************************************/
 
 #ftf_link {
    font-family: Tahoma, Helvetica, sans-serif;
