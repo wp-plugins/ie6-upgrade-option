@@ -14,11 +14,11 @@ http://www.doc4design.com/plugins/ie6-upgrade/
 
 IE6 Upgrade Option utilizes the 25K script created by Free the Foxes: http://www.freethefoxes.com/ as a WordPress plugin. Originally this plugin utilized a smaller 7K script but it's limits had been met in terms of language support, ease-of-use and options for using the warning messages on browsers other than IE6 (refer to the ie6-upgrade-option.php file for instructions on multiple browser usage).
 
-The warning message is displayed using a Lightbox effect hovering over the page content. The idea is to display a warning message, simply and politely informing the user that their browser is out of date while providing links to download newer, more optimal browser choices. Optional browser links included are: IE8, Firefox, Opera, Safari, and Chrome. While this plugin was originally intended for use with IE6 it has now been expanded, due to popular demand, to include a warning message capable of being displayed in any browser. Don't like Firefox? Simply adjust the FTF rating and ask your users to use IE8. This is not limited to a a single browser either, feel free to turn on the warning for IE6, IE7 and Chrome simultaneously.
+The warning message is displayed using a Lightbox effect hovering over the page content. The idea is to display a warning message, simply and politely informing the user that their browser is out of date while providing links to download newer, more optimal browser choices. Optional browser links included are: IE9, Firefox, Opera, Safari, and Chrome. While this plugin was originally intended for use with IE6 it has now been expanded, due to popular demand, to include a warning message capable of being displayed in any browser. Don't like Firefox? Simply adjust the FTF rating and ask your users to use IE8. This is not limited to a a single browser either, feel free to turn on the warning for IE6, IE7 and Chrome simultaneously.
 
 The web page will remain visible through the transparent Lightbox effect and the user is faced with the option of closing the window agreeing that their experience may be severely degraded. The javascript then installs a cookie preventing the window from appearing again. The script is loaded in the site footer in two ways: selectively (as in the case of the basic setup) or permanent (if desiring to use this for browsers other than IE6).
 
-To change the text to reflect the language of your choice simply open the "lang" folder and create your own .json file to replace the default message, then be sure to add your new language code to the ie6-upgrade-option.php file. Current translations include: English, German, Spanish, Hungarian, Swedish, Brazilian Portuguese, Dutch and Norwegian Bokmål.
+To change the text to reflect the language of your choice simply open the "lang" folder and create your own .json file to replace the default message, then be sure to add your new language code to the ie6-upgrade-option.php file. Current translations include: English, French, German, Spanish, Hungarian, Swedish, Brazilian Portuguese, Dutch and Norwegian Bokm&acirc;l.
 
 
 == Screenshots ==
@@ -30,9 +30,9 @@ http://www.doc4design.com/plugins/ie6-upgrade
 To install the plugin just follow these simple steps:
 
 1. Download the plugin and expand it.
-2. Copy the ie6-ppgrade-option folder into your plugins folder ( wp-content/plugins ).
+2. Copy the ie6-upgrade-option folder into your plugins folder ( wp-content/plugins ).
 3. Log-in to the WordPress administration panel and visit the Plugins page.
-4. Locate the ie6-upgrade-option plugin and click on the activate link.
+4. Locate the IE6 Upgrade Option plugin and click on the activate link.
 
 = Translations =
 1. Open the "lang" folder and duplicate one of the language files.
@@ -43,7 +43,7 @@ To install the plugin just follow these simple steps:
 6. Change line 59 by replacing the "en.json" url with your new language file name.
 
 = Additional Browser Warnings =
-Browser warnings can be applied to browsers other than IE6 by following a few simple instructions in the "ie6-upgrade-option.php" file.
+Browser warnings can be applied to browsers other than IE6 by following a few simple instructions included as comments in the "ie6-upgrade-option.php" file.
 
 
 == Changelog ==
@@ -77,15 +77,15 @@ Browser warnings can be applied to browsers other than IE6 by following a few si
 = Thanks =
 * TOnin
 * Mark Verbeeck
-* Kjetil Flekkøy
+* Kjetil Flekk&oslash;y
 * Raoni
 * Melvis Leon
-• Jimmy
+* Jimmy
 
 = Translations =
-* French: TOnin - 
+* French: TOnin
 * Dutch: Marc Verbeeck - http://www.rodenbachschool.be/
-* Norwegian Bokmål: Kjetil Flekkøy - http://www.kjetil@dolcevita.no
+* Norwegian Bokm&acirc;l: Kjetil Flekk&oslash;y - http://www.kjetil@dolcevita.no
 * Brazilian Portuguese: Raoni - http://www.agenciaad.com.br
 * Spanish: Melvis Leon
 * Swedish: Jimmy - http://www.angrycreative.se/
