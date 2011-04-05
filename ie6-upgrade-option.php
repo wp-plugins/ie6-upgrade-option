@@ -3,7 +3,7 @@
 Plugin Name: IE6 Upgrade Option
 Plugin URI: http://www.doc4design.com/plugins/ie6-upgrade
 Description: Generates an optional IE6 upgrade message as a plugin with output only for MSIE browsers
-Version: 2.5
+Version: 2.5.1
 Author: Doc4
 Author URI: http://www.doc4design.com
 */
