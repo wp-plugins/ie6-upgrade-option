@@ -4,7 +4,7 @@ Donate link: http://www.doc4design.com/donate
 Tags: ie6, internet explorer, internet explorer 6, ie6 warning, ie6 message, no ie6, no more ie6, ie6 upgrade, explorer upgrade, internet explorer upgrade, internet explorer message, ie6 close button, explorer destroyer, browser warning message, browser warning, ie7, ie8, opera, firefox, safari, chrome, google chrome, ie9, ie7, ie8,
 Requires at least: 2.8
 Tested up to: 3.1
-Stable tag: 2.5
+Stable tag: 2.5.1
 
 
 == Description ==
@@ -48,6 +48,8 @@ Browser warnings can be applied to browsers other than IE6 by following a few si
 
 == Changelog ==
 
+=2.5.1=
+* Corrected the image file extensions from .png to .gif
 
 = 2.5 =
 * Updated plugin to recognize IE9
