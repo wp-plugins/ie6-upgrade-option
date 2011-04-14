@@ -59,7 +59,7 @@ Browser warnings can be applied to browsers other than IE6 by following a few si
 
 = 1.9 =
 * Added Dutch translation courtesy of: Marc Verbeeck
-* Added Norwegian - Bokmål translation courtesy of: Kjetil Flekkøy
+* Added Norwegian - Bokm&acirc;l translation courtesy of: Kjetil Flekk&oslash;y
 * Added Brazilian Portuguese translation courtesy of: Raoni
 
 
