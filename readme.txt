@@ -48,7 +48,7 @@ Browser warnings can be applied to browsers other than IE6 by following a few si
 
 == Changelog ==
 
-=2.5.1=
+= 2.5.1 =
 * Corrected the image file extensions from .png to .gif
 
 = 2.5 =
