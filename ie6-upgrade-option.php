@@ -3,14 +3,14 @@
 Plugin Name: IE6 Upgrade Option
 Plugin URI: http://www.doc4design.com/plugins/ie6-upgrade
 Description: Generates an optional IE6 upgrade message as a plugin with output only for MSIE browsers
-Version: 2.6
+Version: 2.6.1
 Author: Doc4
 Author URI: http://www.doc4design.com
 */
 
 /******************************************************************************
 
-Copyright 2010  Doc4 : info@doc4design.com
+Copyright 2012  Doc4 : info@doc4design.com
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -29,11 +29,19 @@ The license is also available at http://www.gnu.org/copyleft/gpl.html
 
 *********************************************************************************/
 
+// Would you like to use the pop up warning for browsers other than IE6?
+// If yes, then comment out the line below
 class ie6option {
+
+// Would you like to use the pop up warning for browsers other than IE6?
+// If yes, then uncomment the line below
+//add_action('wp_footer','add_footer');
 
 	function add_footer() {
 		ob_start();
-		echo '<!--[if IE 6]>';
+		// Would you like to use the pop up warning for browsers other than IE6?
+        // If yes, then comment out the line below
+        echo '<!--[if IE 6]>';
 		
 		echo '<span id="ftf_link"></span>';
 		echo '<script src="' . plugins_url("ie6-upgrade-option/warning.js") . '" type="text/javascript" charset="ISO-8859-1"></script>';
@@ -72,7 +80,7 @@ class ie6option {
 			resetting the values using the following method.
 			*/
 			ftf.rate = {
-			"firefox" : 1,
+			"firefox" : 3,
 			"chrome" : 1,
 			"opera" : 1,
 			"safari" : 1,
@@ -103,12 +111,16 @@ class ie6option {
 			);
 
 			</script>';
-		echo '<![endif]-->';
+		// Would you like to use the pop up warning for browsers other than IE6?
+        // If yes, then comment out the line below
+        echo '<![endif]-->';
 
 		ob_get_contents();
 	}	
 
 
+// Would you like to use the pop up warning for browsers other than IE6?
+// If yes, then comment out the function below
 // Only display the code within Internet Explorer Browser
 }
 $browser = strtolower($_SERVER['HTTP_USER_AGENT']);  
