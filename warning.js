@@ -43,7 +43,7 @@ function ftf() {
         };
     b.rate = {
         firefox: 1,
-        chrome: 3,
+        chrome: 1,
         opera: 1,
         safari: 1,
         ie6: 3,
