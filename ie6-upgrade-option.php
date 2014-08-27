@@ -80,7 +80,7 @@ class ie6option {
 			resetting the values using the following method.
 			*/
 			ftf.rate = {
-			"firefox" : 3,
+			"firefox" : 1,
 			"chrome" : 1,
 			"opera" : 1,
 			"safari" : 1,
@@ -100,10 +100,10 @@ class ie6option {
 			"chrome" : 	"' . plugins_url("ie6-upgrade-option/icons/32/chrome.gif") . '",
 			"opera" : 	"' . plugins_url("ie6-upgrade-option/icons/32/opera.gif") . '",
 			"safari" : 	"' . plugins_url("ie6-upgrade-option/icons/32/safari.gif") . '",
-			"ie6" : 	"' . plugins_url("ie6-upgrade-option/icons/32/ie11.gif") . '",		
-			"ie7" : 	"' . plugins_url("ie6-upgrade-option/icons/32/ie11.gif") . '",		
-			"ie8" : 	"' . plugins_url("ie6-upgrade-option/icons/32/ie11.gif") . '",
-			"ie9" : 	"' . plugins_url("ie6-upgrade-option/icons/32/ie11.gif") . '"
+			"ie6" : 	"' . plugins_url("ie6-upgrade-option/icons/32/ie9.gif") . '",		
+			"ie7" : 	"' . plugins_url("ie6-upgrade-option/icons/32/ie9.gif") . '",		
+			"ie8" : 	"' . plugins_url("ie6-upgrade-option/icons/32/ie9.gif") . '",
+			"ie9" : 	"' . plugins_url("ie6-upgrade-option/icons/32/ie9.gif") . '"
 
 			};		
 
@@ -113,7 +113,7 @@ class ie6option {
 			</script>';
 		// Would you like to use the pop up warning for browsers other than IE6?
         // If yes, then comment out the line below
-        //echo '<![endif]-->';
+        echo '<![endif]-->';
 
 		ob_get_contents();
 	}	
