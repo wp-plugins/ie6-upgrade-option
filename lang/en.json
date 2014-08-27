@@ -7,7 +7,7 @@
     "message_failed" : "Did you know this version of Internet Explorer is out of date?",
     "message_acceptable" : "Not bad. Try using our other recommendations.",
     "message_recommended" : "Good choice. Stick with it.",
-    "message_description" : "We no longer support Internet Explorer 6. Things are bound to be broken and perhaps unuseable. We recommend an upgrade to a newer version of Internet Explorer or another web browser. A list of the most popular browsers can be found below.",
+    "message_description" : "We no longer support this version of Internet Explorer. Things are bound to be broken and perhaps unuseable. We recommend an upgrade to a newer version of Internet Explorer or another web browser. A list of the most popular browsers can be found below.",
     "message_warning" : "If you choose to continue without upgrading you acknowledge that your experience on this website will be degraded.",
     "message_error" : "Sorry, something went wrong. We're fixing it.",
     "status_loading" : "Loading...", 
