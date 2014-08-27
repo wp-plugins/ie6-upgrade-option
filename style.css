@@ -19,7 +19,7 @@ html,body,form,center {
 #ftf_background	{
    -moz-opacity: 0.8;
    -khtml-opacity: 0.8;
-   opacity: 0.8;*
+   opacity: 0.8;
    filter: alpha(opacity=80);
    width: 100%;
    height: 100%;
@@ -49,13 +49,13 @@ html,body,form,center {
    font-size: 11px;
    }
    
-#ftf_outer a: link,
-#ftf_outer a: visited,
-#ftf_outer a: active	{
+#ftf_outer a:link,
+#ftf_outer a:visited,
+#ftf_outer a:active	{
    text-decoration: none;
    }
    
-#ftf_outer a: hover {
+#ftf_outer a:hover {
    text-decoration: underline;
    }
    
@@ -113,13 +113,13 @@ a .ftf_browser_name {
    font-size: 10px;
    }
    
-#ftf_header a: link, 
-#ftf_header a: visited {
+#ftf_header a:link, 
+#ftf_header a:visited {
    text-decoration: underline;
    }
    
-#ftf_header a: active, 
-#ftf_header a: hover {
+#ftf_header a:active, 
+#ftf_header a:hover {
    text-decoration: none;
    }
 
@@ -138,18 +138,6 @@ a .ftf_browser_name {
    border: solid 1px #ffcc33 !important;
    border-bottom: solid 3px #ffcc33 !important;
    }
-   
-/*#ftf_body_inner .ftf_browser_link.failed {
-   background: #fff url(http: //code.freethefoxes.com/images/back_red.gif) no-repeat top right;
-   }
-   
-#ftf_body_inner .ftf_browser_link.appectable {
-   background: #fff url(http: //code.freethefoxes.com/images/back_yellow.gif) no-repeat top right;
-   }
-   
-#ftf_body_inner .ftf_browser_link.recommended {
-   background: #fff url(http: //code.freethefoxes.com/images/back_green.gif) no-repeat top right;
-   }*/
 
 #ftf_body_inner .ftf_browser_link.failed .ftf_browser_download,
 #ftf_body_inner .ftf_browser_link.recommended .ftf_browser_download {
@@ -163,7 +151,7 @@ a .ftf_browser_name {
    }
    
 #ftf_body_inner .ftf_browser_link.you .ftf_browser_download	{
-   color: #CCA329; !important
+   #CCA329 !important; 
    text-transform: uppercase;
    }
    
@@ -180,15 +168,15 @@ a .ftf_browser_name {
    background-color: #F5F5F5;
    }
    
-#ftf_body_inner .ftf_browser_link: link, 
-#ftf_body_inner .ftf_browser_link: visited {
+#ftf_body_inner .ftf_browser_link:link, 
+#ftf_body_inner .ftf_browser_link:visited {
    text-decoration: none;
    border: solid 1px #DADADA;
    border-bottom: solid 3px #DADADA;
    }
    
-#ftf_body_inner .ftf_browser_link: active, 
-#ftf_body_inner .ftf_browser_link: hover {
+#ftf_body_inner .ftf_browser_link:active, 
+#ftf_body_inner .ftf_browser_link:hover {
    text-decoration: none;
    border: solid 1px #B9B9B9;
    border-bottom: solid 3px #B9B9B9;
@@ -230,7 +218,7 @@ a .ftf_browser_name {
    clear: both;
    }
    
-#ftf_footer	.ftf_left a: hover {
+#ftf_footer	.ftf_left a:hover {
    text-decoration: underline;
    }
 
@@ -247,16 +235,16 @@ a .ftf_browser_name {
    width: 150px;
    }
    
-#ftf_footer	.ftf_right a: link,
-#ftf_footer	.ftf_right a: visited {
+#ftf_footer	.ftf_right a:link,
+#ftf_footer	.ftf_right a:visited {
    text-decoration: none;
    border: solid 1px #d8d8d8;
    border-bottom: solid 3px #d8d8d8;
    background-color: #f7f7f7;
    }
    
-#ftf_footer	.ftf_right a: active,
-#ftf_footer	.ftf_right a: hover {
+#ftf_footer	.ftf_right a:active,
+#ftf_footer	.ftf_right a:hover {
    text-decoration: none;
    border: solid 1px #b9b9b9;
    border-bottom: solid 3px #b9b9b9;
@@ -270,12 +258,12 @@ a .ftf_browser_name {
    display: none;
    }
    
-#ftf_link a: visited {
+#ftf_link a:visited {
    color: #666;
    text-decoration: underline;
    }
    
-#ftf_link a: hover {
+#ftf_link a:hover {
    color: #666;
    text-decoration: none;
    }
