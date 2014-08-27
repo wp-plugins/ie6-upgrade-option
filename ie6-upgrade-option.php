@@ -3,7 +3,7 @@
 Plugin Name: IE6 Upgrade Option
 Plugin URI: http://www.doc4design.com/plugins/ie6-upgrade
 Description: Generates an optional IE6 upgrade message as a plugin with output only for MSIE browsers
-Version: 3.1
+Version: 3.5
 Author: Doc4
 Author URI: http://www.doc4design.com
 */
@@ -29,6 +29,10 @@ The license is also available at http://www.gnu.org/copyleft/gpl.html
 
 *********************************************************************************/
 
+//Let's do a general check for IE10 and 11 and call it and not bother anyone
+if ((strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) || (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE 10.') !== false)) {
+echo ' '; } else {
+
 // Would you like to use the pop up warning for browsers other than IE6?
 // If yes, then comment out the line below
 class ie6option {
@@ -39,6 +43,7 @@ class ie6option {
 
 	function add_footer() {
 		ob_start();
+		
 		// Would you like to use the pop up warning for browsers other than IE6?
         // If yes, then comment out the line below
         echo '<!--[if IE 6]>';
@@ -113,11 +118,11 @@ class ie6option {
 			</script>';
 		// Would you like to use the pop up warning for browsers other than IE6?
         // If yes, then comment out the line below
-        echo '<![endif]-->';
+        //echo '<![endif]-->';
 
 		ob_get_contents();
 	}	
-
+}
 
 // Would you like to use the pop up warning for browsers other than IE6?
 // If yes, then comment out the function below
