@@ -90,6 +90,8 @@ Browser warnings can be applied to browsers other than IE6 by following a few si
 * Bill Hollings
 
 = Thanks =
+* J.D. Grimes 
+  (for reading through the CSS and listing the errors)
 * TOnin
 * Mark Verbeeck
 * Kjetil Flekk&oslash;y
