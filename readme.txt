@@ -1,10 +1,10 @@
 === IE6 Upgrade Option ===
 Contributors: Doc4, Free the Foxes
 Donate link: http://www.doc4design.com/donate
-Tags: ie6, internet explorer, internet explorer 6, ie6 warning, ie6 message, no ie6, no more ie6, ie6 upgrade, explorer upgrade, internet explorer upgrade, internet explorer message, ie6 close button, explorer destroyer, browser warning message, browser warning, ie7, ie8, opera, firefox, safari, chrome, google chrome, ie9, ie7, ie8,
+Tags: ie6, internet explorer, internet explorer 6, ie6 warning, ie6 message, no ie6, no more ie6, ie6 upgrade, explorer upgrade, internet explorer upgrade, internet explorer message, ie6 close button, explorer destroyer, browser warning message, browser warning, ie7, ie7 warning, ie8, opera, firefox, safari, chrome, google chrome, ie9, ie7, ie8,
 Requires at least: 2.8
-Tested up to: 3.4.2
-Stable tag: 2.6.1
+Tested up to: 3.9.2
+Stable tag: 3
 
 
 == Description ==
@@ -48,6 +48,12 @@ Browser warnings can be applied to browsers other than IE6 by following a few si
 
 
 == Changelog ==
+
+= 3.0 =
+* Updated the browser icons to the latest
+* Updated the browser download links to the latest
+* Updated the browser version numbers to the latest
+* Centered the “Continue” buttons for mobile devices
 
 = 2.6.1 =
 * Corrected a few lines of code
