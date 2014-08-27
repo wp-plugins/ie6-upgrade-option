@@ -21,33 +21,33 @@ function ftf() {
         },
         g = {
             firefox: {
-                url: "http://www.mozilla.com/en-US/firefox/firefox.html",
-                version: "3.6"
+                url: "https://www.mozilla.org/en-US/firefox/new/",
+                version: "31.0"
             },
             chrome: {
-                url: "http://www.google.com/chrome/index.html?hl=en-GB&brand=CHMA&utm_campaign=en_gb&utm_source=en_gb-ha-apac-in-bk&utm_medium=ha",
-                version: "7.0"
+                url: "https://www.google.com/chrome/browser/",
+                version: "37.0"
             },
             opera: {
-                url: "http://www.opera.com/download/",
-                version: "10.6"
+                url: "http://www.opera.com/",
+                version: "23.0"
             },
             safari: {
-                url: "http://www.apple.com/safari/download/",
-                version: "5.0"
+                url: "http://support.apple.com/kb/DL1531",
+                version: "5.1.7"
             },
             ie: {
-                url: "http://www.microsoft.com/windows/internet-explorer/worldwide-sites.aspx",
-                version: "8.0"
+                url: "http://windows.microsoft.com/en-us/internet-explorer/download-ie",
+                version: "11.0"
             }
         };
     b.rate = {
         firefox: 1,
-        chrome: 1,
-        opera: 2,
+        chrome: 3,
+        opera: 1,
         safari: 1,
         ie6: 3,
-        ie7: 1,
+        ie7: 3,
 		ie9: 1,
         ie8: 2
     };
@@ -326,9 +326,9 @@ function ftf() {
         a.push(f.join(" "));
         a.push("</div>");
         a.push("</div>");
-        a.push('<div id="ftf_footer">');
+        a.push('<div id="ftf_footer" style="width:630px;">');
         //a.push('<div class="ftf_left"><a href="http://www.freethefoxes.com" target=_blank>FreeTheFoxes.com</a></div>');
-        a.push('<div class="ftf_right"><a href="Javascript:' + b.instance_name + '.continue_anyway()">');
+        a.push('<div class="ftf_right" style="margin: 0 auto; width:155px;"><a href="Javascript:' + b.instance_name + '.continue_anyway()">');
         ftf_popup_shown = b.get_cookie("ftf_popup");
         ftf_popup_shown == null || ftf_popup_shown == "" ? a.push(e.button_continue) : a.push(e.button_close);
         a.push("</a></div>");
