@@ -3,8 +3,8 @@ Contributors: Doc4, Free the Foxes
 Donate link: http://www.doc4design.com/donate
 Tags: ie6, internet explorer, internet explorer 6, ie6 warning, ie6 message, no ie6, no more ie6, ie6 upgrade, explorer upgrade, internet explorer upgrade, internet explorer message, ie6 close button, explorer destroyer, browser warning message, browser warning, ie7, ie7 warning, ie8, opera, firefox, safari, chrome, google chrome, ie9, ie7, ie8,
 Requires at least: 2.8
-Tested up to: 3.9.2
-Stable tag: 3.5
+Tested up to: 4.2.2
+Stable tag: 3.6
 
 
 == Description ==
@@ -33,7 +33,7 @@ To install the plugin just follow these simple steps:
 2. Copy the ie6-upgrade-option folder into your plugins folder ( wp-content/plugins ).
 3. Log-in to the WordPress administration panel and visit the Plugins page.
 4. Locate the IE6 Upgrade Option plugin and click on the activate link.
-5. Replace the ie6-upgrade-option with the version from the "multi-browser" folder to enable use of this plugin within more browsers than IE6.
+5. Replace the ie6-upgrade-option with the version from the "multi-browser" folder to enable use of this plugin within other browsers.
 
 = Translations =
 1. Open the "lang" folder and duplicate one of the language files.
@@ -48,6 +48,10 @@ Browser warnings can be applied to browsers other than IE6 by following a few si
 
 
 == Changelog ==
+
+= 3.6 =
+* Updated CSS styles
+* Check for functionality within WordPress 4.2.2
 
 = 3.1 =
 * Content tweaks to apply across all browsers
